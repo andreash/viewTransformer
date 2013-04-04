@@ -39,7 +39,7 @@ class PhoneNumberTransformer implements DataTransformerInterface
      */
     public function reverseTransform($view)
     {
-        $view = preg_replace('/1{0,1}\s*-{0,1}\s*\(\s*(\d{3})\s*\)\s*(\d{3})\s*-{0,1}\s*(\d{4})/', '$1$2$3', $view);
+        $view = preg_replace('/1?\s*-?\s*\(?\s*(\d{3})\s*\)?\s*(\d{3})\s*-?\s*(\d{4})/', '$1$2$3', $view);
         if (10 !== strlen($view)) {
             throw new TransformationFailedException(sprintf(
                 '"%s" is not a valid phone number!',
