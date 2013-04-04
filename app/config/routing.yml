@@ -1,0 +1,4 @@
+intrepion_phone:
+    resource: "@intrepionPhoneBundle/Resources/config/routing.yml"
+    prefix:   /
+

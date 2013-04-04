@@ -1,0 +1,23 @@
+intrepion\PhoneBundle\Entity\ContactInfo:
+    type: entity
+    table: null
+    repositoryClass: intrepion\PhoneBundle\Entity\ContactInfoRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        home:
+            type: string
+            length: 255
+        cell:
+            type: string
+            length: 255
+        work:
+            type: string
+            length: 255
+        fax:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

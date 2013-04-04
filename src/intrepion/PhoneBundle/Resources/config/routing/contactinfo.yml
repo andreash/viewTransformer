@@ -1,0 +1,30 @@
+contactinfo:
+    pattern:  /
+    defaults: { _controller: "intrepionPhoneBundle:ContactInfo:index" }
+
+contactinfo_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "intrepionPhoneBundle:ContactInfo:show" }
+
+contactinfo_new:
+    pattern:  /new
+    defaults: { _controller: "intrepionPhoneBundle:ContactInfo:new" }
+
+contactinfo_create:
+    pattern:  /create
+    defaults: { _controller: "intrepionPhoneBundle:ContactInfo:create" }
+    requirements: { _method: post }
+
+contactinfo_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "intrepionPhoneBundle:ContactInfo:edit" }
+
+contactinfo_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "intrepionPhoneBundle:ContactInfo:update" }
+    requirements: { _method: post|put }
+
+contactinfo_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "intrepionPhoneBundle:ContactInfo:delete" }
+    requirements: { _method: post|delete }

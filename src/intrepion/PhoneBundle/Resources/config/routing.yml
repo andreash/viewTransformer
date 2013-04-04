@@ -1,0 +1,7 @@
+intrepion_phone_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: intrepionPhoneBundle:Default:index }
+
+intrepionPhoneBundle_contactinfo:
+    resource: "@intrepionPhoneBundle/Resources/config/routing/contactinfo.yml"
+    prefix:   /contactinfo
